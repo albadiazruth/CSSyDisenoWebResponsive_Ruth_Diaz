@@ -1,0 +1,155 @@
+*{
+        padding: 0px;
+		margin: 0px;
+}
+h1{
+	font: bold 40px Dancing Script OT, sans-serif;
+}
+h2{
+	font: bold 20px Dancing Script OT, sans-serif;
+}
+body{
+	background: #02010a;
+	padding-top: 5px;
+	padding-bottom: 15px; 
+	width: 100%;		
+	margin-left: auto;
+  	margin-right: auto;
+}
+@keyframes slidein {
+	0% {
+ 	 margin-top: 150%;
+	}
+	60% {
+		  margin-top: -5%;
+	}
+	100% {
+		  margin-top: 0%;
+	}
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+.flexbox-cabecera{
+	animation-name: slidein;
+	animation-duration: 2s;
+
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+.flexbox-cabecera > div{
+	padding: 5px;
+    background: #5b7989;
+	color: #FFFFFF;
+	text-shadow: #02010a 2px 2px 2px; 
+}
+#encabezado{
+	text-align: center;
+
+	-moz-border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
+	border-radius-top: 10px 10px 0px 0px;
+}
+#paginas{
+	text-align: center;
+}
+#menu li{
+	display: inline;
+   	margin: 10px;
+	font: bold 25px Dancing Script OT, sans-serif;
+	color: #FFFFFF;
+}
+#menu li a {
+  	color: #FFFFFF;
+}
+#menu li a:hover{
+  	color: #82c3a6;
+}
+.flexbox-paisajes{
+	background: #d5c75f;
+}
+.flexbox-paisajes > div{
+	padding: 20px;
+	text-align: center;
+}
+.flexbox-paisajes img{
+	width: 500px; height:350px;
+}
+#paisaje1 img {
+  	filter: blur(10px);
+}
+
+#paisaje2 img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);	
+}
+#paisaje3 img {
+	-webkit-filter: sepia(90%);
+}
+#paisaje4 img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);	
+}
+#paisaje6 img {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);	
+}
+#pie{
+	background: #C6d5c5;
+  	color: #02010a;
+	margin: 0px;
+	font: bold 20px Dancing Script OT, sans-serif;
+
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius-top: 0px 0px 10px 10px;
+}
+.flexbox-pie > div{
+	padding: 20px;
+}
+@media (min-width: 900px) {
+	.contenido {
+		width: 80%;
+  		margin-left: auto;
+   		margin-right: auto; 
+	}
+	#encabezado {
+	   	text-align: left;	
+	}
+	#paginas {
+	   	text-align: right;
+	}
+	.flexbox-paisajes{
+        display: flex;
+        flex-flow: row wrap;
+	}
+	.flexbox-paisajes > div {
+		width: 25%;
+		margin-left: auto;
+    	margin-right: auto;
+		padding: 25px;
+	}
+	.flexbox-paisajes img{
+		width: 300px; height:250px;
+	}
+	.flexbox-pie{
+		display: flex;
+	}
+}
+@media (min-width: 600px) {
+	.contenido{
+		padding: 10px;
+	}
+}
