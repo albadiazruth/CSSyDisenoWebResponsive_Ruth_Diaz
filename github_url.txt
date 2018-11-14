@@ -1,2 +1,0 @@
-github_url:
-https://github.com/albadiazruth/CSSyDisenoWebResponsive_Ruth_Diaz.git
